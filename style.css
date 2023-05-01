@@ -1,0 +1,97 @@
+/* Styles pour la mise en page des tarifs 
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+th, td {
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+th {
+	background-color: #f2f2f2;
+}*/
+
+
+/* Styles pour le bouton "Contactez-nous" 
+.contact-button {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #337ab7;
+	color: #fff;
+	border-radius: 5px;
+	text-decoration: none;
+}
+.contact-button:hover {
+	background-color: #23527c;
+}*/
+
+
+/* Styles pour la page de tarification de Consiergerie Key */
+
+/* Police de caractères pour tout le document */
+body {
+	font-family: Arial, sans-serif;
+}
+
+/* Styles pour les titres */
+h1, h2 {
+	text-align: center;
+}
+
+h1 {
+	font-size: 36px;
+	margin-top: 50px;
+}
+
+h2 {
+	font-size: 28px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+/* Styles pour les paragraphes */
+p {
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+
+/* Styles pour le tableau des tarifs à la carte pour Check-in */
+table {
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+
+th {
+	background-color: #337ab7;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+
+td {
+	padding: 10px;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+}
+
+tr:hover td {
+	background-color: #f5f5f5;
+}
+
+/* Styles pour le bouton "Contactez-nous" */
+.contact-button {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #337ab7;
+	color: #fff;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+	background-color: #23527c;
+}
+
