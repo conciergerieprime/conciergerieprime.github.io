@@ -1601,9 +1601,9 @@ document.addEventListener('DOMContentLoaded', function() {
 						<meta itemprop="availableLanguage" content="Italian" />
 						<meta itemprop="availableLanguage" content="Arabic" />
 						
-						<a href="tel:+33758191997" class="phone-btn classic" onclick="handlePhoneClick(event)" itemprop="telephone">
+						<a href="tel:+33758191997" class="phone-btn classic" itemprop="telephone">
 							<span class="phone-icon" aria-hidden="true">📞</span>
-							<span>+33 7 58 19 19 97</span>
+							<p>+33 7 58 19 19 97</p>
 						</a>
 						<a href="https://api.whatsapp.com/send?phone=33758191997&text=Bonjour%20je%20souhaite%20des%20informations%20sur%20vos%20services%20Airbnb" target="_blank" class="phone-btn whatsapp" rel="noopener">
 							<span class="phone-icon" aria-hidden="true">💬</span>
@@ -2022,7 +2022,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		  if(successMsg) successMsg.style.display = 'block';
 		} else {
 		  response.json().then(function(data) {
-			alert(data.error || 'Erreur lors de l’envoi. Essayez plus tard.');
+			alert(data.error || 'Erreur lors de l'envoi. Essayez plus tard.');
 		  });
 		}
 	  }).catch(function() {
@@ -2677,10 +2677,7 @@ document.addEventListener('DOMContentLoaded', function() {
 				
 				<div class="contact-buttons" itemscope itemtype="https://schema.org/Organization">
 					<meta itemprop="name" content="Conciergerie Prime Nice">
-					<a href="mailto:conciergerieprime@gmail.com" class="contact-btn" itemprop="email" aria-label="Envoyer un email à Conciergerie Prime">
-						📧 conciergerieprime@gmail.com
-					</a>
-					<a href="tel:+33758191997" class="contact-btn" onclick="handlePhoneClick(event)" itemprop="telephone" aria-label="Appeler Conciergerie Prime">
+					<a href="tel:+33758191997" class="contact-btn" itemprop="telephone" aria-label="Appeler Conciergerie Prime">
 						📞 +33 7 58 19 19 97
 					</a>
 					<a href="https://wa.me/33758191997?text=Bonjour%20Conciergerie%20Prime%2C%20je%20souhaite%20en%20savoir%20plus%20sur%20vos%20services" 
@@ -3048,41 +3045,41 @@ document.addEventListener('DOMContentLoaded', function() {
 <div id="contact-french" style="display:block;">
 	<h4 style="color: #00A8E1; margin-bottom: 20px; font-size: 1.3rem;">Contact</h4>
 	<div style="line-height: 2;">
-		<p style="margin-bottom: 10px;">📞 +33 7 58 19 19 97</p>
-		<p style="margin-bottom: 10px;">📧 conciergerieprime@gmail.com</p>
-		<p style="margin-bottom: 15px;">💬 WhatsApp</p>
+		<p style="margin-bottom: 10px;">📞 <a href="tel:+33758191997">+33 7 58 19 19 97</a></p>
+		<p style="margin-bottom: 10px;">📧 <a href="mailto:conciergerieprime@gmail.com">conciergerieprime@gmail.com</a></p>
+		<p style="margin-bottom: 15px;">💬 <a href="https://wa.me/33758191997?text=Bonjour%20Conciergerie%20Prime%2C%20je%20souhaite%20en%20savoir%20plus%20sur%20vos%20services">WhatsApp</a></p>
 	</div>
 </div>
 <div id="contact-english" style="display:none;">
 	<h4 style="color: #00A8E1; margin-bottom: 20px; font-size: 1.3rem;">Contact</h4>
 	<div style="line-height: 2;">
-		<p style="margin-bottom: 10px;">📞 +33 7 58 19 19 97</p>
-		<p style="margin-bottom: 10px;">📧 conciergerieprime@gmail.com</p>
-		<p style="margin-bottom: 15px;">💬 WhatsApp</p>
+		<p style="margin-bottom: 10px;">📞 <a href="tel:+33758191997">+33 7 58 19 19 97</a></p>
+		<p style="margin-bottom: 10px;">📧 <a href="mailto:conciergerieprime@gmail.com">conciergerieprime@gmail.com</a></p>
+		<p style="margin-bottom: 15px;">💬 <a href="https://wa.me/33758191997?text=Bonjour%20Conciergerie%20Prime%2C%20je%20souhaite%20en%20savoir%20plus%20sur%20vos%20services">WhatsApp</a></p>
 	</div>
 </div>
 <div id="contact-spanish" style="display:none;">
 	<h4 style="color: #00A8E1; margin-bottom: 20px; font-size: 1.3rem;">Contacto</h4>
 	<div style="line-height: 2;">
-		<p style="margin-bottom: 10px;">📞 +33 7 58 19 19 97</p>
-		<p style="margin-bottom: 10px;">📧 conciergerieprime@gmail.com</p>
-		<p style="margin-bottom: 15px;">💬 WhatsApp</p>
+		<p style="margin-bottom: 10px;">📞 <a href="tel:+33758191997">+33 7 58 19 19 97</a></p>
+		<p style="margin-bottom: 10px;">📧 <a href="mailto:conciergerieprime@gmail.com">conciergerieprime@gmail.com</a></p>
+		<p style="margin-bottom: 15px;">💬 <a href="https://wa.me/33758191997?text=Bonjour%20Conciergerie%20Prime%2C%20je%20souhaite%20en%20savoir%20plus%20sur%20vos%20services">WhatsApp</a></p>
 	</div>
 </div>
 <div id="contact-italian" style="display:none;">
 	<h4 style="color: #00A8E1; margin-bottom: 20px; font-size: 1.3rem;">Contatto</h4>
 	<div style="line-height: 2;">
-		<p style="margin-bottom: 10px;">📞 +33 7 58 19 19 97</p>
-		<p style="margin-bottom: 10px;">📧 conciergerieprime@gmail.com</p>
-		<p style="margin-bottom: 15px;">💬 WhatsApp</p>
+		<p style="margin-bottom: 10px;">📞 <a href="tel:+33758191997">+33 7 58 19 19 97</a></p>
+		<p style="margin-bottom: 10px;">📧 <a href="mailto:conciergerieprime@gmail.com">conciergerieprime@gmail.com</a></p>
+		<p style="margin-bottom: 15px;">💬 <a href="https://wa.me/33758191997?text=Bonjour%20Conciergerie%20Prime%2C%20je%20souhaite%20en%20savoir%20plus%20sur%20vos%20services">WhatsApp</a></p>
 	</div>
 </div>
 <div id="contact-arabic" style="display:none; direction:rtl; text-align:center;">
 	<h4 style="color: #00A8E1; margin-bottom: 20px; font-size: 1.3rem;">اتصل بنا</h4>
 	<div style="line-height: 2;">
-		<p style="margin-bottom: 10px;">📞 +33 7 58 19 19 97</p>
-		<p style="margin-bottom: 10px;">📧 conciergerieprime@gmail.com</p>
-		<p style="margin-bottom: 15px;">💬 WhatsApp</p>
+		<p style="margin-bottom: 10px;">📞 <a href="tel:+33758191997">+33 7 58 19 19 97</a></p>
+		<p style="margin-bottom: 10px;">📧 <a href="mailto:conciergerieprime@gmail.com">conciergerieprime@gmail.com</a></p>
+		<p style="margin-bottom: 15px;">💬 <a href="https://wa.me/33758191997?text=Bonjour%20Conciergerie%20Prime%2C%20je%20souhaite%20en%20savoir%20plus%20sur%20vos%20services">WhatsApp</a></p>
 	</div>
 </div>
 				</div>
@@ -3541,62 +3538,62 @@ document.addEventListener('DOMContentLoaded', function() {
 				'services-title': "I Nostri Servizi Premium",
 'service1-title': "Pacchetto Accoglienza Premium<br><span style=\"font-size:0.7em;color:#00A8E1;font-weight:bold;\">(Servizio su richiesta)</span>",
 				'service1-desc': "🏆 Servizio 5 stelle garantito • Accoglienza VIP personalizzata dalle 7:00 alle 01:00 • ✅ Agente certificato in loco • 🛡️ Sicurezza massima • 📋 Checklist completa • ⭐ 98% soddisfazione clienti",
-'service2-title': "Pulizie Professionali<br><span style=\"font-size:0.7em;color:#00A8E1;font-weight:bold;\">(Servizio su richiesta)</span>",
-				'service2-price': "A partire da 25€",
-				'service2-desc': "🏆 Eccellenza garantita • Pulizia impeccabile con prodotti premium • 25€ per 20m² poi +12€/10m² aggiuntivi • ✅ Team certificato • 🧴 Prodotti ecologici premium • ⏱️ Intervento rapido",
-				'service3-title': "Concierge 24/7",
+'service2-title': "Professional Cleaning<br><span style=\"font-size:0.7em;color:#00A8E1;font-weight:bold;\">(On-demand service)</span>",
+				'service2-price': "From 25€",
+				'service2-desc': "🏆 Excellence guaranteed • Impeccable cleaning with premium products • 25€ for 20m² then +12€/10m² additional • ✅ Certified team • 🧴 Premium eco-friendly products • ⏱️ Quick intervention",
+				'service3-title': "24/7 Concierge",
 				'service3-price': "15%",
-				'service3-desc': "🌟 Servizio eccezionale 24/7 • Supporto multilingue permanente • 🚨 Emergenze gestite in <5min • ✅ Team dedicato formato • 💰 Commissione trasparente: SOLO 15% • 📞 Linea diretta prioritaria • 🎯 99.5% risoluzione richieste",
-				'table-header1': "Fascia Oraria",
-				'table-header2': "Tariffa Check-in",
-				'subscription-title': "Rimanete aggiornati sulle nostre ultime offerte",
-				'subscription-desc': "Iscrivetevi alla nostra newsletter per ricevere le nostre promozioni esclusive",
-				'subscription-btn': "Iscriviti",
-				'callback-title': "Essere Richiamati",
-				'callback-desc': "Lasciateci i vostri dati e vi richiameremo il prima possibile per discutere delle vostre esigenze.",
-				'callback-desc': "Lasciateci i vostri dati e vi richiameremo il prima possibile per discutere delle vostre esigenze.",
-				'callback-name-label': "Nome completo *",
-				'callback-phone-label': "Telefono *",
+				'service3-desc': "🌟 Exceptional 24/7 service • Multilingual permanent support • 🚨 Emergencies handled in <5min • ✅ Dedicated trained team • 💰 Transparent commission: ONLY 15% • 📞 Priority direct line • 🎯 99.5% request resolution",
+				'table-header1': "Time Slot",
+				'table-header2': "Check-in Rate",
+				'subscription-title': "Stay updated on our latest offers",
+				'subscription-desc': "Subscribe to our newsletter to receive our exclusive promotions",
+				'subscription-btn': "Subscribe",
+				'callback-title': "Request a Callback",
+				'callback-desc': "Leave us your details and we'll call you back as soon as possible to discuss your needs.",
+				'callback-desc': "Leave us your details and we'll call you back as soon as possible to discuss your needs.",
+				'callback-name-label': "Full name *",
+				'callback-phone-label': "Phone *",
 				'callback-email-label': "Email",
-				'callback-time-label': "Momento migliore",
-				'time-morning': "Mattina (8h-12h)",
-				'time-afternoon': "Pomeriggio (12h-17h)",
-				'time-evening': "Sera (17h-20h)",
+				'callback-time-label': "Best time to call",
+				'time-morning': "Morning (8am-12pm)",
+				'time-afternoon': "Afternoon (12pm-5pm)",
+				'time-evening': "Evening (5pm-8pm)",
 				'time-weekend': "Weekend",
-				'callback-message-label': "Messaggio (opzionale)",
-				'callback-submit-btn': "📞 Richiedere richiamata",
-				'reviews-title': "La Vostra Opinione Conta",
-				'customer-name-label': "Il vostro nome:",
-				'customer-email-label': "La vostra email:",
-				'rating-label': "La vostra valutazione:",
-				'review-content-label': "Il vostro messaggio:",
-				'review-submit-btn': "Invia",
-			   'contact-title': "Contattateci",
-			   'contact-desc': "Affidateci la vostra proprietà e offrite ai vostri ospiti un'esperienza indimenticabile",
+				'callback-message-label': "Message (optional)",
+				'callback-submit-btn': "📞 Request callback",
+				'reviews-title': "Your Opinion Matters",
+				'customer-name-label': "Your name:",
+				'customer-email-label': "Your email:",
+				'rating-label': "Your rating:",
+				'review-content-label': "Your message:",
+				'review-submit-btn': "Submit",
+			   'contact-title': "Contact Us",
+			   'contact-desc': "Trust us with your property and offer your guests an unforgettable experience",
 			   'trust-stars': "★★★★★",
 			   'trust-score': "4.9/5",
-			   'trust-reviews': "<strong>28+ recensioni clienti</strong> verificate",
-			   'trust-revenue': "<strong>+30%</strong> di ricavi medi",
-			   'service0-title': "Check-in flessibile",
-			   'service0-subtitle': "(Servizio su richiesta)",
-			   'service0-price': "A partire da 20€",
-			   'service0-desc': "🌅 <strong>Disponibilità estesa</strong><br><span style=\"color: var(--prime-blue); font-weight: bold;\">Orari di apertura: 20€</span><br>🌄 Mattina presto: 25€<br>🌙 Sera tardi: 25€<br>🌃 <span style=\"color: var(--prime-gold); font-weight: bold;\">Servizio notturno: 40€ (fino all'1 di notte)</span><br>✅ Puntualità garantita • 📱 Conferma immediata",
-			   'about-title': "Informazioni su Conciergerie Prime",
-			   'about-desc': "<strong>ConciergeriePrime</strong> è il vostro partner di fiducia per la gestione premium delle vostre proprietà di prestigio in tutta la regione delle Alpi Marittime. Il nostro team di esperti di concierge a Nizza vi aiuta a massimizzare i vostri redditi da locazione con un approccio professionale e personalizzato.",
-			   'about-zones-title': "🎯 Zone di Intervento",
-			   'about-zones-desc': "Operiamo su tutta la Costa Azzurra: <strong>Nizza</strong>, <strong>Cannes</strong>, <strong>Monaco</strong>, <strong>Antibes</strong>, <strong>Cagnes-sur-Mer</strong>, Juan-les-Pins, Villeneuve-Loubet e tutti i comuni delle Alpi Marittime.",
-			   'about-expertise-title': "⭐ La Nostra Esperienza",
-			   'about-expertise-desc': "Specializzati nella conciergerie di lusso, gestiamo i vostri affitti Airbnb con un tasso di occupazione medio dell'85% e una commissione ultra competitiva di solo il 15%.",
-			   'review1-text': "Conciergerie Prime ha trasformato la nostra esperienza Airbnb a Nizza! Il loro servizio di check-in VIP e le pulizie professionali ci hanno permesso di raggiungere il 98% di soddisfazione dei clienti. La commissione del 15% è molto competitiva. Li consiglio vivamente!",
-			   'review1-role': "Proprietario Airbnb - Nizza Centro",
-			   'review2-text': "Da quando utilizzo Conciergerie Prime per le mie proprietà a Cannes e Monaco, i miei ricavi sono aumentati del 30%! Il loro servizio di concierge 24/7 e la loro esperienza nella gestione Airbnb sono eccezionali. Servizio di lusso a prezzo accessibile!",
-			   'review2-role': "Investitore immobiliare - Cannes e Monaco",
-			   'review3-text': "Conciergerie Prime è IL punto di riferimento per la conciergerie sulla Costa Azzurra! I loro servizi ad Antibes e nelle Alpi Marittime sono impeccabili. Il tasso di occupazione è salito al 95%. La loro professionalità fa la differenza!",
-			   'review3-role': "Proprietaria multi-immobili - Antibes & Costa Azzurra",
-			   'faq1-question': "Qual è la commissione di Conciergerie Prime Nice?",
-			   'faq1-answer': "<strong>Conciergerie Prime</strong> applica una commissione ultra competitiva di <strong>solo il 15%</strong> sui tuoi ricavi da locazione Airbnb. Questa commissione include tutti i nostri servizi premium: check-in VIP, pulizia professionale, concierge 24/7 e gestione completa della tua proprietà a Nizza, Cannes, Monaco e in tutte le Alpi Marittime.",
-			   'faq2-question': "In quali città opera Conciergerie Prime?",
-			   'faq2-answer': `<p>Operiamo in tutta la regione delle <strong>Alpi Marittime</strong> e della <strong>Costa Azzurra</strong>:</p><ul style="margin: 15px 0; padding-left: 20px;"><li><strong>Nizza</strong> – La nostra base principale con team dedicato</li><li><strong>Cannes</strong> – Servizi premium per il Festival ed eventi</li><li><strong>Monaco</strong> – Concierge di lusso di alto livello</li><li><strong>Antibes</strong> – Gestione di appartamenti e ville</li><li><strong>Cagnes-sur-Mer</strong> – Servizi residenziali</li><li><strong>Juan-les-Pins</strong> – Affitti stagionali</li><li><strong>Villeneuve-Loubet</strong> – Gestione Airbnb</li></ul><p>Contattaci al <strong>+33 7 58 19 19 97</strong> per un intervento nella tua città.</p>`
+			   'trust-reviews': "<strong>28+ client reviews</strong> verified",
+			   'trust-revenue': "<strong>+30%</strong> average revenue increase",
+			   'service0-title': "Flexible Check-in",
+			   'service0-subtitle': "(On-demand service)",
+			   'service0-price': "From 20€",
+			   'service0-desc': "🌅 <strong>Extended availability</strong><br><span style=\"color: var(--prime-blue); font-weight: bold;\">Opening hours: 20€</span><br>🌄 Early morning: 25€<br>🌙 Late evening: 25€<br>🌃 <span style=\"color: var(--prime-gold); font-weight: bold;\">Night service: 40€ (until 1am)</span><br>✅ Guaranteed punctuality • 📱 Instant confirmation",
+			   'about-title': "About Conciergerie Prime",
+			   'about-desc': "<strong>ConciergeriePrime</strong> is your trusted partner for premium property management in the Alpes-Maritimes region. Our Nice concierge team helps you maximize your rental income with a professional and personalized approach.",
+			   'about-zones-title': "🎯 Service Zones",
+			   'about-zones-desc': "We cover the entire French Riviera: <strong>Nice</strong>, <strong>Cannes</strong>, <strong>Monaco</strong>, <strong>Antibes</strong>, <strong>Cagnes-sur-Mer</strong>, Juan-les-Pins, Villeneuve-Loubet, and all towns in the Alpes-Maritimes.",
+			   'about-expertise-title': "⭐ Our Expertise",
+			   'about-expertise-desc': "Specializing in luxury concierge, we manage your Airbnb rentals with an average 85% occupancy rate and an ultra-competitive commission of just 15%.",
+			   'review1-text': "Conciergerie Prime has transformed our Airbnb experience in Nice! Their VIP check-in and professional cleaning services have allowed us to achieve a 98% customer satisfaction rate. The 15% commission is extremely competitive. I highly recommend them!",
+			   'review1-role': "Airbnb Owner - Nice Center",
+			   'review2-text': "Since using Conciergerie Prime for my properties in Cannes and Monaco, my revenue has increased by 30%! Their 24/7 concierge service and their expertise in managing Airbnb is exceptional. Luxury service at an affordable price!",
+			   'review2-role': "Real Estate Investor - Cannes & Monaco",
+			   'review3-text': "Conciergerie Prime is THE reference for concierge services on the French Riviera! Their services in Antibes and the Alpes-Maritimes are impeccable. Occupancy rate has risen to 95%. Their professionalism makes the difference!",
+			   'review3-role': "Multi-property Owner - Antibes & French Riviera",
+			   'faq1-question': "What is Conciergerie Prime Nice's commission?",
+			   'faq1-answer': "<strong>Conciergerie Prime</strong> applies an ultra-competitive commission of <strong>only 15%</strong> on your Airbnb rental income. This commission includes all our premium services: VIP check-in, professional cleaning, 24/7 concierge, and full management of your property in Nice, Cannes, Monaco, and throughout the Alpes-Maritimes.",
+			   'faq2-question': "In which cities does Conciergerie Prime operate?",
+			   'faq2-answer': `<p>We cover the entire <strong>Alpes-Maritimes</strong> and <strong>French Riviera</strong> region:</p><ul style="margin: 15px 0; padding-left: 20px;"><li><strong>Nice</strong> – Our main base with dedicated team</li><li><strong>Cannes</strong> – Premium services for the Festival and events</li><li><strong>Monaco</strong> – High-level luxury concierge</li><li><strong>Antibes</strong> – Apartment and villa management</li><li><strong>Cagnes-sur-Mer</strong> – Residential services</li><li><strong>Juan-les-Pins</strong> – Seasonal rentals</li><li><strong>Villeneuve-Loubet</strong> – Airbnb management</li></ul><p>Contact us at <strong>+33 7 58 19 19 97</strong> for service in your city.</p>`
 			},
 			ar: {
 				'hero-title': "التميز في خدمة إيجاراتكم المرموقة",
@@ -3780,24 +3777,6 @@ document.addEventListener('DOMContentLoaded', function() {
 			}
 			
 			requestAnimationFrame(animation);
-		}
-
-		// ==================== PHONE HANDLING ====================
-		function handlePhoneClick(event) {
-			// Vérifier si on est sur mobile
-			const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-			
-			if (!isMobile) {
-				// Sur ordinateur, copier le numéro et afficher un message
-				event.preventDefault();
-				navigator.clipboard.writeText('+33758191997').then(function() {
-					alert('Numéro copié : +33 7 58 19 19 97\nVous pouvez maintenant l\'utiliser avec votre téléphone ou application de téléphonie.');
-				}).catch(function() {
-					// Si clipboard ne fonctionne pas, afficher une alerte simple
-					alert('Appelez-nous au : +33 7 58 19 19 97');
-				});
-			}
-			// Sur mobile, le lien tel: fonctionnera normalement
 		}
 
 		// ==================== LANGUAGE DROPDOWN ====================
@@ -4114,10 +4093,6 @@ document.addEventListener('DOMContentLoaded', function() {
 			if (document.getElementById('faq2-question')) {
 				document.getElementById('faq2-question').innerHTML = translations[lang]['faq2-question'] + '<span class="faq-toggle">+</span>';
 			}
-			if (document.getElementById('faq2-answer')) {
-				document.getElementById('faq2-answer').innerHTML = translations[lang]['faq2-answer'];
-			}
-			// FAQ services dynamic update
 			if (document.getElementById('faq3-question')) {
 				document.getElementById('faq3-french-title').style.display = 'none';
 				document.getElementById('faq3-english-title').style.display = 'none';
@@ -4444,23 +4419,6 @@ document.addEventListener('DOMContentLoaded', function() {
 					},
 					h1: 'Conserjería Prime',
 					h2: 'Servicios de lujo en Niza y la Riviera Francesa'
-				},
-				italian: {
-					lang: 'it',
-					title: 'Concierge Prime - Servizi di lusso a Nizza e Costa Azzurra',
-					desc: '★★★★★ Concierge Prime Nizza - Servizio di concierge di lusso nelle Alpes-Maritimes. Solo 15% di commissione. Molti beni gestiti, 98% soddisfazione clienti. Concierge professionale a Nizza, Cannes, Monaco, Antibes. Check-in VIP, pulizia professionale, assistenza 24/7. Ricavi aumentati del 30% per i nostri clienti.',
-					keywords: 'concierge nizza, servizi di lusso, gestione airbnb nizza, prime concierge, costa azzurra concierge, concierge cannes, concierge monaco, concierge antibes, servizi premium nizza, pulizia airbnb nizza, concierge 24/7 nizza, gestione immobili nizza, concierge raccomandato, recensioni clienti concierge, concierge 5 stelle, soddisfazione garantita, aumento ricavi airbnb',
-					canonical: 'https://conciergerieprime.github.io/it',
-					alternate: {
-						fr: 'https://conciergerieprime.github.io',
-						en: 'https://conciergerieprime.github.io/en',
-						es: 'https://conciergerieprime.github.io/es',
-						it: 'https://conciergerieprime.github.io/it',
-						ar: 'https://conciergerieprime.github.io/ar',
-						default: 'https://conciergerieprime.github.io'
-					},
-					h1: 'Concierge Prime',
-					h2: 'Servizi di lusso a Nizza e Costa Azzurra'
 				},
 				arabic: {
 					lang: 'ar',
